@@ -1,0 +1,197 @@
+:root {
+  --color-primary: #28282a;
+  --color-secondary: #ff8552;
+  --color-light: #e6e6e6;
+  --color-dark: #090c08;
+  --wrapper-width: 90%;
+  --wrapper-margin: 0 auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* Using CSS Variable */
+  margin: 0;
+  padding: 0;
+  /* Using CSS Variable */
+  background-color: var(--color-primary);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: left;
+  /* Using CSS Variable */
+  color: var(--color-dark);
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+header nav ul li a {
+  /* Selector combo */
+  text-decoration: none;
+  /* Using CSS Variable */
+  color: var(--color-dark);
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+}
+
+header nav ul li a:hover {
+  /* Pseudo-class */
+  /* Using CSS Variable */
+  color: var(--color-secondary);
+}
+
+header nav {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+h1,
+h2 {
+  /* Using CSS Variable */
+  color: var(--color-primary);
+  text-align: center;
+  font-size: 2rem;
+  /* Using CSS Variable */
+  text-shadow: 1px 0.5px 0px var(--color-secondary);
+}
+
+h1::before {
+  /* Pseudo-element */
+  content: "Who is ";
+}
+
+h1::after {
+  /* Pseudo-element */
+  content: "?";
+}
+
+img {
+  display: block;
+  /* Using CSS Variable */
+  margin: var(--wrapper-margin);
+}
+
+#wrapper {
+  /* Using CSS Variable */
+  width: var(--wrapper-width);
+  /* Using CSS Variable */
+  margin: var(--wrapper-margin);
+  padding: 20px;
+  /* Using CSS Variable */
+  border: 2px solid var(--color-secondary);
+  /* Using CSS Variable */
+  background-color: var(--color-light);
+  border-radius: 1rem;
+  /* Using CSS Variable */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.linkedin {
+  text-decoration: none;
+  /* Using CSS Variable */
+  margin: var(--wrapper-margin);
+  display: block;
+  /* Using CSS Variable */
+  color: var(--color-primary);
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.linkedin:hover {
+  /* Using CSS Variable */
+  color: var(--color-secondary);
+}
+
+.button {
+  font-size: 1rem;
+  /* Using CSS Variable */
+  background-color: var(--color-primary);
+  /* Using CSS Variable */
+  color: var(--color-light);
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  display: block;
+  /* Using CSS Variable */
+  margin: var(--wrapper-margin);
+}
+
+.button:hover {
+  /* Pseudo-class */
+  /* Using CSS Variable */
+  color: var(--color-secondary);
+}
+
+#facts-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+#six-facts {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+  text-align: center;
+}
+
+#six-facts li {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Pseudo-element */
+#six-facts li:nth-child(1)::before {
+  content: "💍";
+}
+/* Pseudo-element */
+#six-facts li:nth-child(2)::before {
+  content: "💕";
+}
+/* Pseudo-element */
+#six-facts li:nth-child(3)::before {
+  content: "💙";
+}
+/* Pseudo-element */
+#six-facts li:nth-child(4)::before {
+  content: "📸";
+}
+/* Pseudo-element */
+#six-facts li:nth-child(5)::before {
+  content: "🎮";
+}
+/* Pseudo-element */
+#six-facts li:nth-child(6)::before {
+  content: "🎥";
+}
+
+#six-facts li::before {
+  /* Pseudo-element */
+  position: absolute;
+  left: 0;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+#facts {
+  text-align: center;
+  padding-top: 1rem;
+  /* Using CSS Variable */
+  margin: var(--wrapper-margin);
+}
