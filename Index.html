@@ -14,79 +14,114 @@
   <body>
     <div id="wrapper">
       <header>
-        <h1>Shaina Dawson</h1>
-        <nav>
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#facts">Fun Facts</a></li>
-            <li><a href="#connect">Connect</a></li>
-          </ul>
-        </nav>
+        <div class="name-n-nav">
+          <h1>Shaina Dawson</h1>
+          <nav>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#facts">Fun Facts</a></li>
+              <li><a href="#connect">Connect</a></li>
+            </ul>
+          </nav>
+        </div>
       </header>
 
       <main>
         <section>
-          <img
-            src="Images/ShainaProfilePhoto.jpg"
-            alt="shaina dawson with a big smile on her face"
-          />
-          <h2 id="about">About Me</h2>
-          <p>
-            I am a Full Sail University graduate with an A.A.S in Digital Art
-            and Design, currently pursuing a degree in Web Development at Full
-            Sail University. I am passionate about combining art, design, and
-            coding to create websites that are not only visually appealing but
-            also fully functional. Growing up as the youngest of seven in a Navy
-            Family, I was homeschooled alongside my siblings, which instilled in
-            me discipline, adaptability, and a love for learning. I enjoy
-            designing, problem-solving, and building digital experiences that
-            blend creativity with technical skill.
-          </p>
+          <div class="shaina-bio-contact">
+            <img
+              src="Images/ShainaProfilePhoto.jpg"
+              alt="shaina dawson with a big smile on her face"
+            />
+            <div id="parent-about-contact">
+              <div>
+                <h2 id="about">About Me</h2>
+                <p>
+                  I am a Full Sail University graduate with an A.A.S in Digital
+                  Art and Design, currently pursuing a degree in Web Development
+                  at Full Sail University. I am passionate about combining art,
+                  design, and coding to create websites that are not only
+                  visually appealing but also fully functional. Growing up as
+                  the youngest of seven in a Navy Family, I was homeschooled
+                  alongside my siblings, which instilled in me discipline,
+                  adaptability, and a love for learning. I enjoy designing,
+                  problem-solving, and building digital experiences that blend
+                  creativity with technical skill.
+                </p>
+
+                <p>Got a project in mind, a question about web development, or just want to say hi? I would love to hear from you! Feel free to reach out, no carrier pigeons required. I promise timely replies, creative ideas, and zero “reply all” accidents.</p>
+              </div>
+
+              <div id="contact">
+                <button
+                  class="button"
+                  onclick="
+                    window.location.href =
+                      'mailto:sldawson@student.fullsail.edu'
+                  "
+                >
+                  Contact me
+                </button>
+              </div>
+            </div>
+          </div>
         </section>
 
         <section>
           <h2 id="facts">Beyond coding and design, what makes me, "me"</h2>
-          <section id="facts-wrapper">
-            <ul id="six-facts">
-              <li>I'm a proud wife</li>
-              <li>I'm a twin girl mom</li>
-              <li>I'm a boy mom</li>
-              <li>I'm a photographer</li>
-              <li>I'm a gamer</li>
-              <li>I'm a streamer</li>
-            </ul>
+
+          <section class="photo-grid-container">
+            <div class="photo-card">
+              <img src="Images/wife.png" alt="Wife" />
+              <p>I'm a proud wife</p>
+            </div>
+
+            <div class="photo-card">
+              <img src="Images/twins.png" alt="Twin girls" />
+              <p>I'm a twin girl mom</p>
+            </div>
+
+            <div class="photo-card">
+              <img src="Images/son.png" alt="Son" />
+              <p>I'm a boy mom</p>
+            </div>
+
+            <div class="photo-card">
+              <img src="Images/photography.png" alt="Photography" />
+              <p>I'm a photographer</p>
+            </div>
+
+            <div class="photo-card">
+              <img src="Images/gaming.png" alt="Gaming" />
+              <p>I'm a gamer</p>
+            </div>
+
+            <div class="photo-card">
+              <img src="Images/twitch.png" alt="Streaming" />
+              <p>I'm a streamer</p>
+            </div>
           </section>
-        </section>
 
+          
         <section>
-          <h2 id="connect">Let's connect!</h2>
+          <h2 id="socials">Follow my Socials</h2>
 
-          <img src="Gifs/pigeon.gif" alt="pegion flying" />
+          <section class="social-links">
 
-          <p id="Project">
-            Got a project in mind, a question about web development, or just
-            want to say hi? I would love to hear from you! Feel free to reach
-            out, no carrier pigeons required. I promise timely replies, creative
-            ideas, and zero “reply all” accidents.
-          </p>
+            <a href="https://linkedin.com/in/shainadawson/"
+             target="_blank"
+            rel="noopener noreferrer">
+            <img src="Images/linkedin.svg" alt="LinkedIn logo">
+            </a>
 
-          <a
-            class="linkedin"
-            href="https://www.linkedin.com/in/shainadawson/"
+            <a href="https://instagram.com/therealsdubmedia/"
             target="_blank"
-          >
-            Follow me on LinkedIn
-          </a>
+            rel="noopener noreferrer">
+             <img src="Images/instagram.svg" alt="Instagram logo">
+            </a>
 
-          <button
-            class="button"
-            onclick="
-              window.location.href = 'mailto:sldawson@student.fullsail.edu'
-            "
-          >
-            Contact me
-          </button>
         </section>
+
       </main>
       <footer>
         <p>Shaina Dawson | Dev2319 | 02/15/2026</p>
